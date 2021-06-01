@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layoutDescription="@xml/detail_motion"
+        tools:context=".detail.DetailActivity"
+        tools:showIn="@layout/activity_detail"
+        >
+
+        <TextView
+            android:id="@+id/file_name_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            />
+
+        <TextView
+            android:id="@+id/file_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="?attr/colorPrimaryDark"
+            tools:text="Glide - Image Loading Library by BumpTech"
+            />
+
+        <TextView
+            android:id="@+id/download_status_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/download_status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            />
+
+        <TextView
+            android:id="@+id/download_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="?attr/colorPrimaryDark"
+            tools:text="Success"
+            />
+
+        <ImageView
+            android:id="@+id/download_status_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/download_status_content_description"
+            tools:srcCompat="@drawable/ic_check_circle_outline_24"
+            tools:tint="?attr/colorPrimaryDark"
+            />
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="56dp"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white"
+            />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>
